@@ -1,14 +1,15 @@
 function amIWilson(p) {
 
-    function factorial(n) {
-        return n ? n * factorial(n - 1) : 1;
-    }
-    let fact = factorial(p-1)
+    p = BigInt(p)
 
-    let check = (fact + 1)/((p * p))
-    return Number.isInteger(check);
+    function factorial(e) {
+        return e ? e * factorial(e - 1n) : 1n;
+    }
+    let fact = factorial(p-1n)
+
+    return (fact + 1n)%((p * p)) === 0n
 
 }
 
 
-console.log(amIWilson(5))
+console.log(amIWilson(563))
