@@ -1,0 +1,1 @@
+const getSize = (width, height, depth) => [(width * height + width * depth + height * depth) * 2, width * height * depth];
