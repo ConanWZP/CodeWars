@@ -9,4 +9,4 @@ function twoDecimalPlaces(number) {
 }
 
 
-console.log(    twoDecimalPlaces(10.1289767789)     )
+console.log(    twoDecimalPlaces(10.00)     )
