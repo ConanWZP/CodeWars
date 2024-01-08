@@ -5,7 +5,6 @@ function add() {
         return acc
     }, 0)
 
-
 }
 
 
